@@ -1,0 +1,33 @@
+.contact-info {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    margin: 20px 0; /* Margin above and below */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    margin-left: 10px;
+}
+
+.contact-info p {
+    margin: 0 20px; /* Add margin between paragraphs */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #333; /* Set the color for the text */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .contact-info p {
+        margin: 10px 0; /* Add margin between items vertically */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info p {
+        font-size: 0.85rem; /* Further reduce font size on extra-small screens */
+    }
+}

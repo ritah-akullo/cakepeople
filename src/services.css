@@ -1,0 +1,36 @@
+.services mt-4 {
+    /* Light background for contrast */
+    padding: 10px; /* Add padding for space inside the div */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 0; /* Margin for spacing above and below */
+    opacity: 0; /* Start invisible */
+    transform: translateX(-50px); /* Start off-screen to the left */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition for opacity and position */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.services.visible {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Slide into place */
+}
+
+.services h2 {
+    font-size: 2rem; /* Font size for the section heading */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+.services p {
+    font-size: 1.1rem; /* Slightly larger font for paragraphs */
+    color: #555; /* Grey color for text */
+    line-height: 1.6; /* Improve line spacing */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.services strong {
+    margin-left: 20px; /* Inline margin for strong elements */
+}

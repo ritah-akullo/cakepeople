@@ -1,0 +1,53 @@
+.circle-paragraph {
+    display: flex;
+    flex-wrap: wrap; /* Allow circles to wrap on smaller screens */
+    justify-content: space-between; /* Evenly space circles */
+    align-items: center;
+    gap: 20px; /* Space between circles */
+    margin-top: 20px;
+}
+
+.circle-paragraph p {
+    background-color: beige;
+    color: #333;
+    border-radius: 50%; /* Circular shape */
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    line-height: 1.2;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .circle-paragraph {
+        justify-content: center; /* Center circles on smaller screens */
+        gap: 15px; /* Adjust space between circles */
+    }
+
+    .circle-paragraph p {
+        width: 150px; /* Reduce size of circles */
+        height: 150px;
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .circle-paragraph {
+        flex-direction: column; /* Stack circles vertically on mobile */
+        gap: 10px; /* Reduce gap between circles */
+    }
+
+    .circle-paragraph p {
+        width: 120px; /* Further reduce size for mobile */
+        height: 120px;
+        font-size: 12px; /* Adjust font size for smaller circles */
+    }
+}

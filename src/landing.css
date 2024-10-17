@@ -1,0 +1,90 @@
+/* Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Landing page background styling */
+.landing-page {
+     /* Black background */
+    color: gold; /* Gold text color */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Overlay effect for text */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Button styling */
+.btn {
+    background-color: beige !important;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkgoldenrod; /* Hover effect */
+    color: white;
+}
+.header-background {
+    background-image: url('./assets/choco.jpg'); /* Adjust the path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px; /* Adjust padding based on how much space you want */
+    color: whitesmoke; /* Make text stand out against the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    font-size: large;
+       
+    
+}
+.background-opacity {
+    background-color: rgba(200, 200, 200, 0.4); /* White background with 80% opacity */
+    padding: 60px; /* Add some padding for aesthetics */
+    border-radius: 1px; /* Optional: adds rounded corners */
+    /* You can adjust the color and opacity as needed */
+}
+
+
+
+.Left {
+    display: right;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: right; /* Center items vertically */
+    margin-left: 800px;
+}
+
+.navbar-nav {
+    margin-left: 0; /* Remove default margin */
+}
+
+.nav-item {
+    margin-right: 10px; /* Spacing between items */
+    text-align: left;
+}
+
+.nav-link {
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Change text color */
+    /* Make text bold */
+}
+
+.nav-link:hover {
+    color: #ff5733; /* Change color on hover */
+}
+
+.cake{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
